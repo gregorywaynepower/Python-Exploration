@@ -23,15 +23,17 @@ Double VS. Single Quotes: You can use either, just make sure you're consistent. 
 
 Escaping quotation marks in strings "Little Billy said 'I want to get the bag one day too!' But Little Billy did not put in the hard work." As long as you switch between single within double quotes, or double quotes within single quotes.
 
-#### Escape Sequences, A.K.A Escape Characters!
-    Note: You must put the escape characters within print().
-    Important one is "\n" - Which creates a newline.
-    Important one is "\'" - Which lets you continue on with a string, if necessary.
-    Example, if you use the "\b" - Which simulates a backspace in the middle of a string. If you simply call backspace, when "backspace = 'HEL\bLO"; You get 'HEL\x08LO'. If you put in print(backspace) when "backspace = 'HEL\bLO"; You get 'HELO'.
+## Escape Sequences, A.K.A Escape Characters
 
-    String Concatenation, adding two strings together. He also uses this as an opportunity to introduce "+=, -=, /= and *=" which let you increment, decrement, divide, or multiply by an amount after the assignment operator (equal sign). This cannot be done on literals (try assigning to a value to a variable).
+Note: You must put the escape characters within print().
+Important one is "\n" - Which creates a newline.
+Important one is "\'" - Which lets you continue on with a string, if necessary.
+Example, if you use the "\b" - Which simulates a backspace in the middle of a string. If you simply call backspace, when "backspace = 'HEL\bLO"; You get 'HEL\x08LO'. If you put in print(backspace) when "backspace = 'HEL\bLO"; You get 'HELO'.
 
-#### String Formatting
+String Concatenation, adding two strings together. He also uses this as an opportunity to introduce "+=, -=, /= and *=" which let you increment, decrement, divide, or multiply by an amount after the assignment operator (equal sign). This cannot be done on literals (try assigning to a value to a variable).
+
+## String Formatting
+
 New way (as of Python 3.6) way to interpolate, or insert stuff into strings.
 So it starts with an f and the string has double quotes, you insert variables with curly braces.
 
@@ -40,9 +42,9 @@ Example:
     x = 10
     formatted = f"I've told you {x} times already!"
 
-This is one way that you can do stuff, like calculations and then slap that shit into a string.
+### This is one way that you can do stuff, like calculations and then slap that shit into a string
 
-Older way (Python 2 to version Python 3.5) is to use the .format method
+### Older way (Python 2 to version Python 3.5) is to use the .format method
 
     Example:
 
@@ -55,51 +57,53 @@ Older way (Python 2 to version Python 3.5) is to use the .format method
         last = "Ever"
         formatted = "First Name: {}, Last Name: {}".format(first, last)
 
-#### Strings and Indexes
+### Strings and Indexes
+
     Colt talks about how words are just an array of characters.
 
-#### Converting Data Types
+### Converting Data Types
 
-```
-number = 12
-type(number) --> This prints "<class 'int'>"
-8 natively, converts into an integer. But we can force it to become a string by using str().
-str(8) --> Prints '8'
-You can accidentally change str or int into variables that hold values, effectively breaking these functions if you are not careful (e.i. str = 13 would break these keywords)
-```
+    number = 12
+    type(number) --> This prints "<class 'int'>"
+    8 natively, converts into an integer. But we can force it to become a string by using str().
+    str(8) --> Prints '8'
+    You can accidentally change str or int into variables that hold values, effectively breaking these functions if you are not careful (e.i. str = 13 would break these keywords)
 
-#### Building a Mileage Convertor with User Input
+### Building a Mileage Convertor with User Input
 
 You can ask for user input by using input()
-``` print("How many kilometers did you struggle to bike today?")
-kms = input()
-miles = float(kms)/1.6094
-rounded_miles = round(miles, 2)
-print(f"Your {kms} kilometer ride converts to + {rounded_miles} miles.")
-```
+
+    print("How many kilometers did you struggle to bike today?")
+    kms = input()
+    miles = float(kms)/1.6094
+    rounded_miles = round(miles, 2)
+    print(f"Your {kms} kilometer ride converts to + {rounded_miles} miles.")
 
 ___
 
-### SECTION 8: Boolean and Conditional Logic
-#### Section Introduction and Objectives
-    
-``` Getting User Input:
-    input() prompts the user to put in information from the command line.
+## SECTION 8: Boolean and Conditional Logic
+
+### Section Introduction and Objectives
+
+### Getting User Input
+
+    input()
+    prompts the user to put in information from the command line.
     The second of these two code examples is a lot cleaner and prevents errors by having everything the input be on its own line, instead of being smashed onto the end of the printed statement.
     -------------------------------------------
     data = input("What's your favorite color?")
     print("You said " + data)
     -------------------------------------------
     print("What's your favorite color?")
-    data = input()                              
+    data = input()
     print("You said " + data)
     -------------------------------------------
-```
 
-#### Intro to Conditionals:
-    Python is indentation sensitive.
-    Code Example:
-    ```
+### Intro to Conditionals
+
+Python is indentation sensitive.
+Code Example:
+
     name = "Little Billy"
     if name == "Arya Stark":
     print("Valar Morghulis, which means 'All men will die.'")
@@ -107,10 +111,9 @@ ___
     print("You know nothing.")
     else:
     print("Carry on, peasant.")
-    ```
-#### Another Code Exercise:
 
-    
+### Another Code Exercise
+
     # NO TOUCHING PLEASE---------------
     from random import randint
     choice = randint(1,10)
@@ -122,14 +125,12 @@ ___
     elif choice != 7:
     print("unlucky")
 
-#### Another Code Exercise:
-        
+### Second Code Exercise
+
     # NO TOUCHING ======================================
     from random import randint
     num = randint(1, 1000) #picks random number from 1-1000
     # NO TOUCHING ======================================
-
-
 
     # YOUR CODE GOES HERE vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
@@ -142,13 +143,16 @@ ___
 
 ___
 
-### Section 9: Rock, Paper, Scissors
+## Section 9: Rock, Paper, Scissors
+
+- Go to Rock_Paper_Scissors_Game Directory
+- Look into Python
 
 ___
 
-### Section 10: Looping in Python
+## Section 10: Looping in Python
 
-####  83. The Basics of For Loops:
+### 83. The Basics of For Loops
 
     For loops are written like this
 
@@ -160,8 +164,8 @@ ___
     Items: a new variable that can be called whatever you want
     "item" references the current position of our _iterator_ within the iterable. It will iterate over (run through) every item of the collection and then go away when it has visited all items.
 
-#### 88. Introducing While Loops
+### 88. Introducing While Loops
+
     We can also iterate using a while loop, which has a different format.
 
-#### 89. Introducing While Loops
-    
+### 89. Introducing While Loops
