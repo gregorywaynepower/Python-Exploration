@@ -224,5 +224,26 @@
 
         # We can also iterate using a while loop, which has a different format
 
-array = [1, 2, 3]
-print(list(range(0, len(array))))
+# # 102. 
+
+# sounds = ["super", "cali", "fragil", "istic", "expi", "ali", "docious"]
+
+# # Define your code below:
+
+# result = ("".join(sounds).upper())
+# print(result)
+
+# 104. List Methods: Append, Insert and Extend
+
+# Create a list called instructors
+
+# Add the following strings to the instructors list 
+    # "Colt"
+    # "Blue"
+    # "Lisa"
+
+# Run the tests to make sure you've done this correctly!
+
+instructors = []
+instructors.extend(["Colt", "Blue", "Lisa"])
+print(instructors)
