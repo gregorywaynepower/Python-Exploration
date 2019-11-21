@@ -206,3 +206,31 @@ You can use negative index values to retrieve values from the end of a list:
 
 Seeing if a value is in a list!
 You can use **in** and it will return a Boolean value.
+
+### 101. Changing Values in Lists
+
+    # DON'T TOUCH THIS PLEASE!
+    people = ["Hanna","Louisa","Claudia", "Angela","Geoffrey", "aparna"]
+    # DON'T TOUCH THIS PLEASE!
+    #Change "Hanna" to "Hanna"
+    people[0] = "Hannah"
+    #Change "Geoffrey" to "Jeffrey"
+    people[4] = "Jeffrey"
+    #Change "aparna" to "Aparna" (capitalize it)
+    people[-1] = "Aparna"
+
+### 102. Iterating Over Lists
+
+#### For Loop Way
+
+    array = [1, 3, 4]
+    for arbitraryVariable in array:
+        print(arbitraryVariable)
+
+#### While Loop Way
+
+    array = [1, 3, 4]
+    i = 0
+    while i < len(numbers):
+        print(numbers[i])
+        i += 1
