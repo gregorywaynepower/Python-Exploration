@@ -8,20 +8,14 @@ def twoNumberSum(array, targetSum):
     i = 0
     n = 0
     sumArray = []
-    for i in array:
+    while len(sumArray) < 2:
         sumArray.append(array[n])
         sumArray.append(array[n+1])
         print("First sumArray")
         print(sumArray)
         i += 1
         sumArraySums = (sumArray[0] + sumArray[1])
-        if sumArraySums == targetSum:
-            sumArray.sort()
-            print(sumArray)
-        else:
-            sumArray.pop(n+1)
-            n += 1
-            sumArray.append(n)
+        
 
         
 
