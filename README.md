@@ -234,3 +234,90 @@ You can use **in** and it will return a Boolean value.
     while i < len(numbers):
         print(numbers[i])
         i += 1
+
+#### List with String Templating
+
+    colors = ["magenta", "green", "orange", "red"]
+    index = 0
+    while index < len(colors):
+        print(f"{index}: colors[index])
+        index += 1
+
+### 103. Coding Exercise
+
+#### My Solution
+
+    sounds = ["super", "cali", "fragil", "istic", "expi", "ali", "docious"]
+
+    # Define your code below:
+
+    result = ("".join(sounds).upper())
+    print(result)
+
+    # Outputs: "SUPERCALIFRAGILISTICEXPIALIDOCIOUS"
+
+#### Their Solutions
+
+##### Capitlizing Each String
+
+    sounds = ["super", "cali", "fragil", "istic", "expi", "ali", "docious"]
+    # Define your code below:
+    result = ''
+    for s in sounds:
+        result += s.upper()
+
+##### Add all strings to a result and capitalize it at the end
+
+    sounds = ["super", "cali", "fragil", "istic", "expi", "ali", "docious"]
+    
+    # Define your code below:
+    result = ''
+    for s in sounds:
+        result += s
+    result = result.upper()
+
+### 104. List Methods: Append, Insert, and Extend
+
+#### Difference Between Functions and Methods
+
+Functions are free-floating whereas methods are functions attached to an object (i.e. list, tuple, ect.)
+
+- list.append(item) - Adds one and only one item to the end of a list.
+- list.extend(item(s)) - Adds all of the items passed through the method to the list. Can be used to join to lists seamlessly.
+- list.insert(index, item(s)) - Lets you seamlessly add items to list.
+
+### Coding Exercise
+
+    # Create a list called instructors
+
+    # Add the following strings to the instructors list 
+        # "Colt"
+        # "Blue"
+        # "Lisa"
+
+    # Run the tests to make sure you've done this correctly!
+
+    instructors = []
+    instructors.extend(["Colt", "Blue", "Lisa"])
+    print(instructors)
+
+    Returns: ["Colt", "Blue", "Lisa"]
+
+### Their Solution
+
+    # Create a list called instructors
+    instructors = []
+    # Add the following strings to the instructors list 
+        # "Colt"
+        # "Blue"
+        # "Lisa"
+    
+    instructors.append("Colt")
+    instructors.append("Blue")
+    instructors.append("Lisa")
+
+### 106. List Methods: Clear, Pop, and Remove
+
+- list.clear() - Removes all items from a list, leaving an empty list.
+- list.pop() - Pops off the last item in a list by default, but you can pass a number and it will remove the item at the index that number is.
+- list.remove() - It will remove the first item that matches what you pass. If it can't find the item you pass, then it will throw an error.
