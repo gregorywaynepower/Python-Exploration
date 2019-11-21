@@ -15,6 +15,16 @@ def twoNumberSum(array, targetSum):
         print(sumArray)
         i += 1
         sumArraySums = (sumArray[0] + sumArray[1])
+        k = 0
+        if sumArraySums != targetSum:
+            sumArray.pop()
+            k += 1
+            sumArray.append(array[i])
+        elif sumArraySums == targetSum:
+            return sumArray
+        else:
+            sumArray = []
+            return sumArray
         
 
         
