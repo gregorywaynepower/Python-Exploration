@@ -223,3 +223,6 @@
         # 88. Introducing While Loops
 
         # We can also iterate using a while loop, which has a different format
+
+array = [1, 2, 3]
+print(list(range(0, len(array))))

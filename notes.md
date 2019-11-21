@@ -169,3 +169,40 @@ ___
     We can also iterate using a while loop, which has a different format.
 
 ### 89. Introducing While Loops
+
+___
+
+## Section 12: Lists
+
+### 97. Intro to Lists and Objectives
+
+A list is a collection or grouping of items.
+
+- Describe, create and access a list data structure
+- Use built in methods tomodify and copy lists
+- Iterate over lists using loops and list comprehensions
+- Work with nested lists to build more complex data structures
+
+### 98. Creating Lists
+
+    array = []
+    taskNumbers = list(range(1,4))
+    Outputs: [1, 2, 3]
+
+### 99. Code Example
+
+    # Define my_stuff 
+    my_stuff = [1.0, "is", "a", "float"]
+    # Define nums 
+    nums = list(range(1,100))
+
+### 100. Accessing Data in Lists
+
+You can use negative index values to retrieve values from the end of a list:
+
+    friends  = ["Billy", "Cas", "James"]
+    print(friends[-1]) # "James"
+    print(friends[-4]) # IndexError
+
+Seeing if a value is in a list!
+You can use **in** and it will return a Boolean value.
