@@ -244,6 +244,7 @@
 
 # Run the tests to make sure you've done this correctly!
 
-instructors = []
-instructors.extend(["Colt", "Blue", "Lisa"])
-print(instructors)
+# instructors = []
+# instructors.extend(["Colt", "Blue", "Lisa"])
+# print(instructors)
+

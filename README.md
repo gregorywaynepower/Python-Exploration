@@ -321,3 +321,31 @@ Functions are free-floating whereas methods are functions attached to an object 
 - list.clear() - Removes all items from a list, leaving an empty list.
 - list.pop() - Pops off the last item in a list by default, but you can pass a number and it will remove the item at the index that number is.
 - list.remove() - It will remove the first item that matches what you pass. If it can't find the item you pass, then it will throw an error.
+
+### 107. List Methods: Index, Count, Sort, Reverse, and Join
+
+- list.index(item, start, end) - Returns the index of the specified item in the list. You can specifiy the start and end of where you want index to look for any given parameter.
+- list.count(item) - Returns the number of time an item appears in a list. If an item isn't a list, it will return 0. Not crash like index()
+- list.reverse(item) - Reverse the elements of the list.
+- list.sort() - Sort the items of the list. You can customize the parameters (more on that later).
+- "".join(list with strings) - It is more of a string method, used to combine a list of strings and return a new string. Whatever is in beteen the quotes, is inserted between each iterable in your list.
+
+#### 108. Coding Exercise
+
+        # Create a list called instructors
+    instructors = []
+    # Add the following strings to the instructors list 
+        # "Colt"
+        # "Blue"
+        # "Lisa"
+    instructors.extend(["Colt", "Blue", "Lisa"])
+    # Remove the last value in the list
+    instructors.pop()
+    # Remove the first value in the list
+    instructors.pop(0)
+    # Add the string "Done" to the beginning of the list
+    instructors.insert(0, "Done")
+    # Run the tests to make sure you've done this correctly!
+    # Code passed tests.
+
+### 109. Slices
