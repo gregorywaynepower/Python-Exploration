@@ -349,3 +349,66 @@ Functions are free-floating whereas methods are functions attached to an object 
     # Code passed tests.
 
 ### 109. Slices
+
+Organized like this:
+
+```list[start:end:step]```
+
+Slices create new a new instance of the list, **meaning even though ```original_array == sliced_array``` will resolve to ```True```, ```original_array is sliced_array``` will resolve to  ```False```**
+
+#### start Parameter
+
+    python
+    first_list = [1, 2, 3, 4]
+    first_list[1:] = [2, 3, 4]
+    # Positive slice starts from the front of the array.
+    first_list[-2:] = [3, 4]
+    # Negative slice starts from the back of the array, but -1 is first position, since -0 can't exist.
+
+#### end Parameter
+
+The slice: end parameter is exlusive, meaning we do not include the index we are counting up to.
+
+    python
+    first_list = [1, 2, 3, 4]
+    first_list[:2] = [1, 2]
+    first_list[:-1] = [1, 2, 3]
+    # We are counting up to one element from the end.
+    first_list[1:-1] = [2, 3]
+
+#### step Parameter
+
+The step is the number to count at a time. For example a step of 2 counts every other number.
+
+    python
+    first_list = [1, 2, 3, 4]
+    first_list[::2] = [1, 3]
+
+When step is a negative number, it means we are counting backwards.
+
+    python
+    first_list = [1, 2, 3, 4]
+    first_list[::-2] = [4, 2]
+
+#### Tricks with Slices
+
+You can reverse lists and strings. You can also modify an existing list.
+
+    python
+    rappers = ["Kanye", "Freddie Gibbs", "J Dilla"]
+    rappers[1:2] = ["MFDoom", "Common", "O.D.B"]
+Here above is an example of modifying the record we are replacing "Freddie Gibbs" with "MF Doom" and adding the items "Common" and "O.D.B" after our new entry.
+
+To add a list onto the end of an existing list ```rappers```, from our example above you would use ```rappers[len(rappers)] = ["Logic", "Logic Jr."]```, which would add your list items ```["Logic", "Logic Jr."]``` onto the end of the existing array.
+
+### 110. Swapping Values in Lists
+
+You can move values around lists by using the method below.
+
+    names = ["James", "Jesse"]
+    names[0], names[1] = names[1], names[0]
+    print(names) = ["Jesse", "James"]
+
+## Section 13: List Comprehensions
+
+### 111. List Comprehension
