@@ -2,6 +2,7 @@ array = [3, 5, -4, 8, 11, 1, -1, 6]
 targetSum = 10
 
 def twoNumberSum(array, targetSum):
+    print(array)
     array.sort()
     print(array)
     print(len(array))
@@ -17,6 +18,7 @@ def twoNumberSum(array, targetSum):
         sumArraySums = (sumArray[0] + sumArray[1])
         k = 0
         if sumArraySums != targetSum:
+            i =+ 1
             sumArray.pop()
             k += 1
             sumArray.append(array[i])

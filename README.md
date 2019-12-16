@@ -330,7 +330,7 @@ Functions are free-floating whereas methods are functions attached to an object 
 - list.sort() - Sort the items of the list. You can customize the parameters (more on that later).
 - "".join(list with strings) - It is more of a string method, used to combine a list of strings and return a new string. Whatever is in beteen the quotes, is inserted between each iterable in your list.
 
-#### 108. Coding Exercise
+### 108. Coding Exercise
 
         # Create a list called instructors
     instructors = []
