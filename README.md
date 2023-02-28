@@ -9,7 +9,9 @@ Data Types: One thing to note, "dict" data types are similar to an "Object" in J
 Note on bools, the values must be "True" or "False" no lowercase.
 Strings: an array of characters within single or double quotes.
 
-What the Heck is Dynamic Typing: It allows us to change variable to different types. A note on the "None" type, to compare this to JavaScript, it would be comparable to "null". The reason that I say "null" instead of "undefined", even though the interepreter will also throw you "undefined", "None" and "null" would still be put there by the developer, unlike "undefined" which is something that exists within any Object in JavaScript.
+## What the Heck is Dynamic Typing
+
+It allows us to change variable to different types. A note on the "None" type, to compare this to JavaScript, it would be comparable to "null". The reason that I say "null" instead of "undefined", even though the interepreter will also throw you "undefined", "None" and "null" would still be put there by the developer, unlike "undefined" which is something that exists within any Object in JavaScript.
 
 What is statically typed then? So, an example in C++ or C, which are what Python's core is. In those languages, a variable must be assigned as a data type when they are instantiated. For example, look below:
 
@@ -40,7 +42,7 @@ Example:
     x = 10
     formatted = f"I've told you {x} times already!"
 
-### This is one way that you can do stuff, like calculations and then slap that shit into a string
+### This is one way that you can do stuff, like calculations and then slap that into a string
 
 ### Older way (Python 2 to version Python 3.5) is to use the .format method
 
@@ -156,7 +158,7 @@ ___
 
         # for itme in iterable_object:
             # Do something with the item
-    
+
     An iterable object ios some kind of collection of items, for instance: a list of number, a string of characters, a range, etc.
 
     Items: a new variable that can be called whatever you want
@@ -238,7 +240,7 @@ You can use `in` and it will return a Boolean value.
     colors = ["magenta", "green", "orange", "red"]
     index = 0
     while index < len(colors):
-        print(f"{index}: colors[index])
+        print(f"{index}: {colors[index]}")
         index += 1
 
 ### 103. Coding Exercise
