@@ -1,6 +1,6 @@
 # The Modern Python 3 Bootcamp
 
-Certain ways we should name variables. Variables must start with a letter or an underscore, NO STARTING WITH SYMBOLS. We can use letters, numbers, or underscores. STILL NO SYMBOlS. Variable names are case-sensitve. Reason why you can't assign values to symbols, is that they function as operators within Python.
+Certain ways we should name variables. Variables must start with a letter or an underscore, NO STARTING WITH SYMBOLS. We can use letters, numbers, or underscores. STILL NO SYMBOLS. Variable names are case-sensitve. Reason why you can't assign values to symbols, is that they function as operators within Python.
 
 Naming conventions: Most variables should be "snake_case", "CAPITAL_SNAKE_CASE" usually refers to constants (Like PI), UpperCamelCase is usually used for classes, and __double_underscored_variables__ also called __dunder__ means that you should not touch the variables.
 
