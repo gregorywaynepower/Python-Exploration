@@ -1,7 +1,5 @@
 # The Modern Python 3 Bootcamp
 
-Learned that multiline comments don't exist in Python. We have the beauty of word-wrap in VS Code though.
-
 Certain ways we should name variables. Variables must start with a letter or an underscore, NO STARTING WITH SYMBOLS. We can use letters, numbers, or underscores. STILL NO SYMBOlS. Variable names are case-sensitve. Reason why you can't assign values to symbols, is that they function as operators within Python.
 
 Naming conventions: Most variables should be "snake_case", "CAPITAL_SNAKE_CASE" usually refers to constants (Like PI), UpperCamelCase is usually used for classes, and __double_underscored_variables__ also called __dunder__ means that you should not touch the variables.
@@ -205,7 +203,7 @@ You can use negative index values to retrieve values from the end of a list:
     print(friends[-4]) # IndexError
 
 Seeing if a value is in a list!
-You can use **in** and it will return a Boolean value.
+You can use `in` and it will return a Boolean value.
 
 ### 101. Changing Values in Lists
 
@@ -354,7 +352,7 @@ Organized like this:
 
 ```list[start:end:step]```
 
-Slices create new a new instance of the list, **meaning even though ```original_array == sliced_array``` will resolve to ```True```, ```original_array is sliced_array``` will resolve to  ```False```**
+Slices create new a new instance of the list, meaning even though ```original_array == sliced_array``` will resolve to ```True```, ```original_array is sliced_array``` will resolve to  ```False```**
 
 #### start Parameter
 
